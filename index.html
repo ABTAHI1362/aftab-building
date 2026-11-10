@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#14243a">
+<title>سامانه هوشمند مجتمع آفتاب</title>
+<style>
+:root{--navy:#14243a;--navy2:#1d3451;--gold:#d6ad62;--bg:#f3f5f8;--ink:#172437;--muted:#718096;--line:#e5eaf0;--white:#fff;--green:#16845b;--red:#c34b4b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Arial,sans-serif;font-size:14px}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{display:grid;grid-template-columns:245px 1fr;min-height:100vh}.side{background:var(--navy);color:white;padding:24px 16px;display:flex;flex-direction:column;gap:22px}.brand{display:flex;align-items:center;gap:12px;padding:4px 8px 20px;border-bottom:1px solid #ffffff20}.logo{width:43px;height:43px;border-radius:14px;background:linear-gradient(135deg,#f1d18d,#b98637);display:grid;place-items:center;color:#172437;font-size:23px;font-weight:bold}.brand b{font-size:17px}.brand small{display:block;color:#c5d0dc;margin-top:5px}.nav{display:grid;gap:7px}.nav button{border:0;background:transparent;color:#d3dce7;text-align:right;padding:13px 14px;border-radius:10px}.nav button.active,.nav button:hover{background:#ffffff18;color:white}.nav button span{display:inline-block;width:27px}.side-note{margin-top:auto;color:#aebdcd;font-size:11px;line-height:1.9;padding:10px}.main{min-width:0}.top{height:72px;background:white;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 30px;position:sticky;top:0;z-index:5}.top strong{font-size:16px}.top small{color:var(--muted)}.top-actions{display:flex;gap:8px;align-items:center}.btn{border:0;border-radius:9px;padding:10px 14px;background:var(--navy);color:white}.btn.gold{background:var(--gold);color:#1c2938}.btn.light{background:#eef2f6;color:var(--navy)}.btn.danger{background:#fff0f0;color:var(--red)}.content{padding:28px 30px;max-width:1500px;margin:auto}.welcome{display:flex;justify-content:space-between;align-items:center;margin-bottom:23px;gap:12px}.welcome h1{font-size:22px;margin:0 0 8px}.welcome p{margin:0;color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-bottom:22px}.stat,.panel{background:white;border:1px solid var(--line);border-radius:15px;padding:18px;box-shadow:0 3px 12px #20334a08}.stat label{color:var(--muted)}.stat strong{display:block;font-size:24px;margin:13px 0 5px}.stat small{color:var(--muted)}.grid2{display:grid;grid-template-columns:1.25fr .75fr;gap:16px}.panel h2{font-size:16px;margin:0 0 16px}.panel-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:15px}.panel-head h2{margin:0}.units{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.unit{border:1px solid var(--line);border-radius:12px;padding:14px;background:#fff}.unit b{display:block;margin-bottom:8px}.unit small{color:var(--muted)}.unit strong{display:block;margin-top:12px}.positive{color:var(--green)}.negative{color:var(--red)}.muted{color:var(--muted)}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;white-space:nowrap}th,td{padding:12px 10px;text-align:right;border-bottom:1px solid var(--line)}th{color:var(--muted);font-weight:normal;font-size:12px}td{font-size:13px}.empty{text-align:center;color:var(--muted);padding:28px}.page{display:none}.page.active{display:block}.formgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}.field{display:grid;gap:7px}.field label{font-size:12px;color:var(--muted)}input,select,textarea{width:100%;border:1px solid #dce3eb;border-radius:9px;padding:11px;background:#fff;color:var(--ink);outline:none}input:focus,select:focus,textarea:focus{border-color:#b68b43}textarea{min-height:90px;resize:vertical}.form-actions{display:flex;gap:8px;margin-top:15px}.notice{padding:13px;border:1px solid var(--line);border-radius:11px;margin-bottom:9px}.notice b{display:block;margin-bottom:6px}.notice small{color:var(--muted)}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:15px}.hamb{display:none}.tag{font-size:11px;border-radius:20px;padding:5px 9px;background:#edf7f2;color:var(--green)}.footer{color:var(--muted);font-size:11px;text-align:center;margin:24px 0}.mobile-nav{display:none}
+@media(max-width:950px){.app{grid-template-columns:1fr}.side{display:none}.top{padding:0 16px}.hamb{display:inline-block}.content{padding:20px 16px}.stats{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}.units{grid-template-columns:repeat(2,1fr)}.mobile-nav{display:flex;position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--line);z-index:8;justify-content:space-around;padding:7px 3px calc(7px + env(safe-area-inset-bottom))}.mobile-nav button{border:0;background:none;color:var(--muted);font-size:10px;padding:5px}.mobile-nav button.active{color:#9a702e}.mobile-nav span{display:block;font-size:19px;margin-bottom:3px}.content{padding-bottom:85px}}
+@media(max-width:520px){.stats{gap:9px}.stat{padding:13px}.stat strong{font-size:19px}.welcome{align-items:flex-start;flex-direction:column}.formgrid{grid-template-columns:1fr}.top-actions .btn{padding:8px}.units{gap:8px}.unit{padding:11px}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="side">
+ <div class="brand"><div class="logo">☀</div><div><b>مجتمع آفتاب</b><small>سامانه مدیریت ساختمان</small></div></div>
+ <nav class="nav" id="sideNav">
+  <button class="active" data-page="dashboard"><span>▦</span>داشبورد</button>
+  <button data-page="units"><span>⌂</span>مدیریت واحدها</button>
+  <button data-page="finance"><span>↔</span>امور مالی</button>
+  <button data-page="announcements"><span>▤</span>اطلاعیه‌ها</button>
+  <button data-page="backup"><span>⬇</span>پشتیبان‌گیری</button>
+ </nav>
+ <div class="side-note">نسخه اولیه سامانه<br>اطلاعات این نسخه در همین مرورگر ذخیره می‌شود.</div>
+</aside>
+<main class="main">
+ <header class="top"><div style="display:flex;align-items:center;gap:12px"><button class="btn light hamb" onclick="showPage('dashboard')">☰</button><div><strong id="pageTitle">داشبورد مدیریت</strong><br><small id="today"></small></div></div><div class="top-actions"><span class="tag">نسخه آزمایشی</span><button class="btn gold" onclick="showPage('finance')">＋ ثبت تراکنش</button></div></header>
+ <div class="content">
+  <section class="page active" id="dashboard">
+   <div class="welcome"><div><h1>سلام، مدیر مجتمع آفتاب ☀️</h1><p>نمای کلی وضعیت مالی و واحدهای ساختمان</p></div><button class="btn light" onclick="showPage('units')">مشاهده واحدها ←</button></div>
+   <div class="stats">
+    <div class="stat"><label>تعداد واحدها</label><strong>۸ واحد</strong><small>ساختمان مجتمع آفتاب</small></div>
+    <div class="stat"><label>مجموع دریافتی</label><strong id="incomeStat">۰ تومان</strong><small>بر اساس تراکنش‌های ثبت‌شده</small></div>
+    <div class="stat"><label>مجموع هزینه‌ها</label><strong id="expenseStat">۰ تومان</strong><small>بر اساس تراکنش‌های ثبت‌شده</small></div>
+    <div class="stat"><label>مانده صندوق</label><strong id="balanceStat">۰ تومان</strong><small>دریافتی منهای هزینه‌ها</small></div>
+   </div>
+   <div class="grid2">
+    <div class="panel"><div class="panel-head"><h2>وضعیت واحدها</h2><button class="btn light" onclick="showPage('units')">مدیریت</button></div><div class="units" id="unitCards"></div></div>
+    <div class="panel"><h2>آخرین تراکنش‌ها</h2><div id="recentTransactions"></div></div>
+   </div>
+  </section>
+  <section class="page" id="units">
+   <div class="welcome"><div><h1>مدیریت واحدها</h1><p>اطلاعات ساکنان و مانده حساب هر واحد</p></div></div>
+   <div class="panel"><div class="panel-head"><h2>فهرست ۸ واحد</h2><span class="tag">قابل ویرایش</span></div><div class="table-wrap"><table><thead><tr><th>واحد</th><th>نام مالک / ساکن</th><th>شماره تماس</th><th>مانده حساب</th><th>عملیات</th></tr></thead><tbody id="unitsTable"></tbody></table></div></div>
+  </section>
+  <section class="page" id="finance">
+   <div class="welcome"><div><h1>امور مالی</h1><p>ثبت شارژ، درآمد و هزینه‌های ساختمان</p></div></div>
+   <div class="panel" style="margin-bottom:16px"><h2>ثبت تراکنش جدید</h2><form id="transactionForm">
+    <div class="formgrid">
+     <div class="field"><label>نوع تراکنش</label><select id="type"><option value="income">دریافت / شارژ واحد</option><option value="expense">هزینه ساختمان</option></select></div>
+     <div class="field"><label>مبلغ (تومان)</label><input id="amount" type="number" min="1" required placeholder="مثلاً ۵۰۰۰۰۰"></div>
+     <div class="field"><label>واحد مربوطه (برای دریافت)</label><select id="unitSelect"><option value="">انتخاب واحد</option></select></div>
+     <div class="field"><label>تاریخ</label><input id="date" type="date" required></div>
+     <div class="field" style="grid-column:1/-1"><label>شرح تراکنش</label><input id="description" required placeholder="مثلاً شارژ آبان یا تعمیر پمپ"></div>
+    </div><div class="form-actions"><button class="btn" type="submit">ثبت تراکنش</button><button class="btn light" type="reset">پاک کردن</button></div>
+   </form></div>
+   <div class="panel"><div class="panel-head"><h2>دفتر تراکنش‌ها</h2><button class="btn danger" onclick="clearTransactions()">پاک کردن همه</button></div><div class="table-wrap"><table><thead><tr><th>تاریخ</th><th>نوع</th><th>واحد</th><th>شرح</th><th>مبلغ</th><th></th></tr></thead><tbody id="transactionsTable"></tbody></table></div></div>
+  </section>
+  <section class="page" id="announcements">
+   <div class="welcome"><div><h1>اطلاعیه‌های ساختمان</h1><p>ثبت و نگهداری پیام‌های مدیر</p></div></div>
+   <div class="panel" style="margin-bottom:16px"><h2>اطلاعیه جدید</h2><form id="announcementForm"><div class="formgrid"><div class="field"><label>عنوان</label><input id="annTitle" required placeholder="عنوان اطلاعیه"></div><div class="field"><label>تاریخ</label><input id="annDate" type="date" required></div><div class="field" style="grid-column:1/-1"><label>متن اطلاعیه</label><textarea id="annBody" required placeholder="متن پیام برای ساکنان..."></textarea></div></div><div class="form-actions"><button class="btn">ثبت اطلاعیه</button></div></form></div>
+   <div class="panel"><h2>اطلاعیه‌های ثبت‌شده</h2><div id="announcementsList"></div></div>
+  </section>
+  <section class="page" id="backup">
+   <div class="welcome"><div><h1>پشتیبان‌گیری و بازیابی</h1><p>از اطلاعات ثبت‌شده نسخه پشتیبان بگیر</p></div></div>
+   <div class="panel"><h2>مدیریت فایل پشتیبان</h2><p class="muted" style="line-height:2">برای نگهداری امن اطلاعات، هر ماه و پیش از تغییرات مهم یک نسخه پشتیبان دریافت کن. فایل پشتیبان شامل واحدها، تراکنش‌ها و اطلاعیه‌هاست.</p><div class="toolbar"><button class="btn" onclick="backup()">⬇ دریافت فایل پشتیبان</button><label class="btn light" for="restoreFile">⬆ بازیابی فایل پشتیبان</label><input id="restoreFile" type="file" accept="application/json" hidden></div><p class="muted" id="backupStatus"></p><hr style="border:0;border-top:1px solid var(--line)"><b>محدودیت نسخه فعلی</b><p class="muted" style="line-height:2">اطلاعات فعلاً فقط در حافظه همین مرورگر و همین دستگاه ذخیره می‌شود. اتصال امن Supabase و همگام‌سازی موبایل و کامپیوتر در مرحله بعد انجام خواهد شد.</p></div>
+  </section>
+  <div class="footer">سامانه هوشمند مجتمع آفتاب · نسخه اولیه قابل توسعه</div>
+ </div>
+ <nav class="mobile-nav" id="mobileNav"><button class="active" data-page="dashboard"><span>▦</span>خانه</button><button data-page="units"><span>⌂</span>واحدها</button><button data-page="finance"><span>↔</span>مالی</button><button data-page="announcements"><span>▤</span>اطلاعیه</button><button data-page="backup"><span>⬇</span>پشتیبان</button></nav>
+</main>
+</div>
+<script>
+const KEY='aftab_building_v1';
+const defaultData={units:Array.from({length:8},(_,i)=>({id:i+1,name:'',phone:''})),transactions:[],announcements:[]};
+let data;
+try{data=JSON.parse(localStorage.getItem(KEY))||defaultData}catch(e){data=defaultData}
+const money=n=>Number(n||0).toLocaleString('fa-IR')+' تومان';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function save(){localStorage.setItem(KEY,JSON.stringify(data));render()}
+function unitBalance(id){return data.transactions.filter(t=>t.type==='income'&&Number(t.unit)===id).reduce((a,t)=>a+Number(t.amount),0)}
+function totals(){let income=data.transactions.filter(t=>t.type==='income').reduce((a,t)=>a+Number(t.amount),0),expense=data.transactions.filter(t=>t.type==='expense').reduce((a,t)=>a+Number(t.amount),0);return{income,expense,balance:income-expense}}
+function render(){
+ const t=totals();document.getElementById('incomeStat').textContent=money(t.income);document.getElementById('expenseStat').textContent=money(t.expense);document.getElementById('balanceStat').textContent=money(t.balance);
+ document.getElementById('unitCards').innerHTML=data.units.map(u=>`<div class="unit"><b>واحد ${u.id}</b><small>${esc(u.name||'نام ساکن ثبت نشده')}</small><strong>${money(unitBalance(u.id))}</strong></div>`).join('');
+ document.getElementById('unitsTable').innerHTML=data.units.map(u=>`<tr><td>واحد ${u.id}</td><td>${esc(u.name||'—')}</td><td>${esc(u.phone||'—')}</td><td>${money(unitBalance(u.id))}</td><td><button class="btn light" onclick="editUnit(${u.id})">ویرایش</button></td></tr>`).join('');
+ document.getElementById('unitSelect').innerHTML='<option value="">انتخاب واحد</option>'+data.units.map(u=>`<option value="${u.id}">واحد ${u.id}</option>`).join('');
+ const rows=data.transactions.slice().reverse();document.getElementById('transactionsTable').innerHTML=rows.length?rows.map((x)=>`<tr><td>${esc(x.date)}</td><td>${x.type==='income'?'دریافت':'هزینه'}</td><td>${x.unit?'واحد '+x.unit:'—'}</td><td>${esc(x.description)}</td><td class="${x.type==='income'?'positive':'negative'}">${money(x.amount)}</td><td><button class="btn danger" onclick="deleteTransaction('${x.id}')">حذف</button></td></tr>`).join(''):'<tr><td colspan="6" class="empty">هنوز تراکنشی ثبت نشده است.</td></tr>';
+ document.getElementById('recentTransactions').innerHTML=rows.slice(0,5).map(x=>`<div class="notice"><b>${esc(x.description)}</b><small>${esc(x.date)} · ${x.type==='income'?'دریافت':'هزینه'} · ${money(x.amount)}</small></div>`).join('')||'<div class="empty">هنوز اطلاعاتی ثبت نشده است.</div>';
+ document.getElementById('announcementsList').innerHTML=data.announcements.slice().reverse().map(a=>`<div class="notice"><b>${esc(a.title)}</b><div style="line-height:1.9;margin:7px 0">${esc(a.body)}</div><small>${esc(a.date)}</small></div>`).join('')||'<div class="empty">اطلاعیه‌ای ثبت نشده است.</div>';
+}
+function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('[data-page]').forEach(b=>b.classList.toggle('active',b.dataset.page===id));const titles={dashboard:'داشبورد مدیریت',units:'مدیریت واحدها',finance:'امور مالی',announcements:'اطلاعیه‌ها',backup:'پشتیبان‌گیری'};document.getElementById('pageTitle').textContent=titles[id];}
+document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
+function editUnit(id){let u=data.units.find(x=>x.id===id);let name=prompt('نام مالک یا ساکن واحد '+id,u.name||'');if(name===null)return;let phone=prompt('شماره تماس',u.phone||'');if(phone===null)return;u.name=name.trim();u.phone=phone.trim();save()}
+document.getElementById('transactionForm').addEventListener('submit',e=>{e.preventDefault();let type=document.getElementById('type').value,amount=Number(document.getElementById('amount').value),unit=Number(document.getElementById('unitSelect').value)||null;if(!amount||amount<1)return alert('مبلغ معتبر وارد کن.');if(type==='income'&&!unit)return alert('برای دریافت، واحد را انتخاب کن.');data.transactions.push({id:Date.now().toString(),type,amount,unit,date:document.getElementById('date').value,description:document.getElementById('description').value.trim()});e.target.reset();document.getElementById('date').value=new Date().toISOString().slice(0,10);save();alert('تراکنش ثبت شد.')});
+function deleteTransaction(id){if(confirm('این تراکنش حذف شود؟')){data.transactions=data.transactions.filter(x=>x.id!==id);save()}}
+function clearTransactions(){if(confirm('همه تراکنش‌ها حذف شوند؟ این کار قابل بازگشت نیست.')){data.transactions=[];save()}}
+document.getElementById('announcementForm').addEventListener('submit',e=>{e.preventDefault();data.announcements.push({title:document.getElementById('annTitle').value.trim(),body:document.getElementById('annBody').value.trim(),date:document.getElementById('annDate').value});e.target.reset();document.getElementById('annDate').value=new Date().toISOString().slice(0,10);save();alert('اطلاعیه ثبت شد.')});
+function backup(){let blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='aftab-building-backup-'+new Date().toISOString().slice(0,10)+'.json';a.click();URL.revokeObjectURL(a.href);document.getElementById('backupStatus').textContent='فایل پشتیبان آماده شد.'}
+document.getElementById('restoreFile').addEventListener('change',async e=>{let f=e.target.files[0];if(!f)return;try{let x=JSON.parse(await f.text());if(!Array.isArray(x.units)||!Array.isArray(x.transactions)||!Array.isArray(x.announcements))throw Error();if(confirm('اطلاعات فعلی با اطلاعات فایل جایگزین شود؟')){data=x;save();document.getElementById('backupStatus').textContent='بازیابی با موفقیت انجام شد.'}}catch(err){alert('فایل پشتیبان معتبر نیست.')}e.target.value=''});
+document.getElementById('today').textContent=new Intl.DateTimeFormat('fa-IR',{dateStyle:'full'}).format(new Date());
+document.getElementById('date').value=new Date().toISOString().slice(0,10);document.getElementById('annDate').value=new Date().toISOString().slice(0,10);
+render();
+</script>
+</body>
+</html>
