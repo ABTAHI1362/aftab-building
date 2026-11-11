@@ -122,7 +122,14 @@ body{background:radial-gradient(circle at 10% 0%,#eaf0fa 0,transparent 34%),var(
  <nav class="mobile-nav" id="mobileNav"><button class="active" data-page="dashboard"><span>▦</span>خانه</button><button data-page="units"><span>⌂</span>واحدها</button><button data-page="finance"><span>↔</span>مالی</button><button data-page="announcements"><span>▤</span>اطلاعیه</button><button data-page="backup"><span>⬇</span>پشتیبان</button><button data-page="settings"><span>⚙</span>تنظیمات</button></nav>
 </main>
 </div>
-<script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+ <script>const SUPABASE_URL = 'https://whrtudxpjfvtsbewluvy.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_lkjUlcBA4d94LQNtSRrD2A_8ZMJxAv1';
+
+const supabaseClient = window.supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_KEY
+);
 const KEY='aftab_building_v1';
 const defaultData={settings:{buildingName:'مجتمع آفتاب',managerName:'مدیر ساختمان',monthlyCharge:0,buildingSubtitle:'سامانه مدیریت ساختمان'},units:Array.from({length:8},(_,i)=>({id:i+1,name:'',phone:''})),transactions:[],announcements:[]};
 let data;
